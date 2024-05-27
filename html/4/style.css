@@ -1,0 +1,149 @@
+article{
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+h1, h2{
+    color: #000000;
+    border-radius: 5px;
+}
+
+.historia{
+    text-align: center;
+}
+.historia ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.historia ul li{
+    margin: 20px;
+    width: 150px;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 12px;
+}
+.historia ul li:nth-child(1n){
+    background-color: #9665aa;
+    color: #fff;
+}
+.historia ul li:nth-child(2n){
+    background-color: #9665aa;
+    color: #ffffff;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    
+}
+.contenedor div{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+}
+.contenedor div ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 90%;
+}
+.contenedor div ul li{
+    text-align: center;
+    width: 100px;
+    background-color: #9665aa;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+h4{
+    color: #fff;
+}
+
+.contenedor ul li:nth-child(2n){
+    background-color: #9665aa;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.contenedor div p{
+    color: #fff;
+}
+.contop{
+    width: 100%;
+    display: flex;
+    
+}
+.contop div{
+    margin: 20px;
+    padding: 10px;
+    background-color: #9665aa;
+    color: #fff;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+}
+.variable ul li{
+    background-color: #9665aa;
+}
+.operadores{ 
+    text-align: center;
+}
+.condicionales{
+    background-color: #9665aa;
+    text-align: center;
+}
+.contcond{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.contcond div{
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.contcond div img{
+    width: 250px;
+}
+.bucles{
+    text-align: center;
+}
+.contbucl{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.contbucl div{
+    background-color: #9665aa;
+    color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.contbucl div img{
+    width: 250px;
+}

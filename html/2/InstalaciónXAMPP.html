@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación y configuración de XAMPP</title>
+    <link rel="stylesheet" href="sttyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instalación de XAMPP</h1>
+        
+        <div class="steps">
+            <h2>Pasos para instalar XAMPP:</h2>
+            <ol>
+                <li>
+                    <p>Primero iremos al buscador para poner “Descargar XAMPP” y entramos a la primera opción que nos</p>
+                    <p>aparece, luego entramos al apartado para descargar, conde encontraremos distintas formas de</p>
+                    <p>descargarlo dependiendo de lo que se requiera. Seleccionamos la opción de nuestra preferencia y</p>
+                    <p>hacemos clic al archive .exe que se va a descargar para que comience la instalación. Le daremos</p>
+                    <p>“Siguiente” a todo y esperamos hasta que se muestre la siguiente pantalla. Podemos encontrar la página en</p>
+                    <p><a href="https://www.apachefriends.org/es/index.html">apachefriends.org</a>.</p>
+                <img src="Paso1.jpg" alt="Paso 1" style="width: 50%;">
+                </li>
+                <li>
+                    <p>Cuando se muestre esta pantalla deberemos oprimir el botón “Config” y deberemos seleccionar la</p>
+                    <p>primera opción que nos aparece ahí “Apache(httpd.conf)”. Todo este procedimiento lo haremos para</p>
+                    <p>tener la salida ainternet para el puerto que nosotros utilizamos.</p>
+                    <img src="Paso2.png" alt="Paso 2" style="width: 50%;">
+                </li>
+                <li>
+                    <p>Se abre el bloc de notas y luego presionar "Ctrl + B" para abrir una pestaña de búsqueda. En esta </p>
+                    <p>pestaña, se busca el carácter "80" en el texto y se reemplaza por "8080" en tres partes diferentes</p>
+                    <p>del código, si es necesario. Después de hacer estos cambios, se guardan seleccionando "Archivo" y</p>
+                    <p>luego "Guardar". Este proceso se repite si hay más instancias del carácter "80" que necesitan ser</p>
+                    <p>modificadas.</p>
+                    <img src="Paso3.png" alt="Paso 3" style="width: 50%;">
+                </li>
+                <li>
+                    <p>Seleccionaremos “Config” de la parte superior derecha y se abrirá este apartado en donde primero</p>
+                    <p>seleccionamos Apache y MySQL en Autostart of modules, luego hacemos clic en Service and Port</p>
+                    <p>Settings, nos aseguraremos que en Main Port aparezca “8080”, y si no, entonces lo agregamos y</p>
+                    <p>guardamos cambios. Luego, en el apartado de SQL revisamos que en el apartado de Main Port aparezca<p>
+                    <p>3306, una vez que todo esté en orden, guardamos los cambios realizados</p>
+                    <img src="Paso4.png" alt="Paso 4" style="width: 50%;">
+                </li>
+                <li>
+                    <p>Guardamos todos los cambios realizados para después hacer clic en los Start de MySQL y Apache</p>
+                    <p>para comenzar con el proceso, y cuando nos aparezca una pestaña para permitir el acceso, lo</p>
+                    <p>aceptamos y esperamos que todo se haya realizado y cargado correctamente.</p>
+                    <img src="Paso5.png" alt="Paso 5" style="width: 50%;">
+                </li>
+                <li>
+                    <p>Cuando hayamos finalizado los pasos anteriores, hacemos clic en “Admin” de Apache y nos deberá</p>
+                    <p>de dirigir hasta esta página de XAMPP.</p>
+                    <img src="Paso6.png" alt="Paso 6" style="width: 50%;">
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
