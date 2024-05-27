@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA | Aplicación del Lenguaje PHP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="4/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color: #fff;" >Aplicación del Lenguaje PHP</h1>
+    </header>
+    <article>
+        <div class="historia">
+            <h2>Datos sobre PHP</h2>
+            <ul>
+                <li class="info">Significaba originalmente Personal Home Page</li>
+                <li class="info">PHP ahora se conoce oficialmente como 'Hypertext Preprocessor' (Procesador de
+                    Hypertexto) y fue lanzado en 1995.</li>
+                <li class="info"> Inicialmente escrito como un conjunto de Common Gateway Interface (CGI) en “C”
+                    (1994).</li>
+                <li class="info">PHP fue diseñado originalmente para reemplazar un conjunto de scripts de Perl
+                    para mantener las Personal Home Pages (También conocidas como PHP).</li>
+                <li class="info"> PHP fue creado originalmente por Rasmus Lerdlof en 1995. Escribió los binarios
+                    originales de Common Gateway Interface (CGI).</li>
+                <li class="info">Zeev Suraski y Andi Gutmans, dos desarrolladores en el Technion IIT,
+                    reescribieron el analizador sintáctico en 1997 y formaron la base de PHP 3.
+                </li>
+                <li class="info">Suraski y Gutmans reescribieron el núcleo de PHP 3, produciendo Zend Engine en
+                    1999. También fundaron Zend Technologies en Ramat Gan, Israel.</li>
+                <li class="info"> El 22 de mayo del 2000, fue lanzado PHP 4 por Zend Engine 1.0</li>
+                <li class="info">La implementación principal de PHP ahora es producida por The PHP Group y sirve
+                    como el estándar de facto para PHP ya que no hay una especificación formal.
+                </li>
+            </ul>
+        </div>
+        <div class="contenedor">
+            <div class="variable">
+                <h2>Variables</h2>
+                <p>
+                    Un elemento que permite almacenar información. <br>
+                <ul>
+                    <li class="lista">Debe empezar por $</li>
+                    <li class="lista">Puede contener letras, números o guiones bajos</li>
+                    <li class="lista">Distingue entre mayúsculas y minúsculas.</li>
+                    <li class="lista">Se recomienda utilizar notación "camel case".</li>
+                </ul>
+                <h4> Asignación de valor:</h4>
+                <ul>
+                    <li class="lista">Se utiliza el operador =. </li>
+                    <li class="lista">No se necesitan comillas para números.</li>
+                    <li class="lista">Se necesitan comillas para cadenas de texto (dobles o simples).</li>
+                </ul>
+                </p>
+            </div>
+            <div class="constantes">
+                <h2>Constantes</h2>
+                <p>Un identificador para un valor simple que no cambia.</p>
+                <ul>
+                    <li class="caraconst">Comienza con una letra o guión bajo</li>
+                    <li class="caraconst">No lleva $</li>
+                    <li class="caraconst">Son automáticamente globales</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="operadores">
+            <h2>Operadores</h2>
+            <div class="contop">
+                <div class="comparador">
+                    <h3>Operadores de comparación</h3>
+                    <code>==, !=, <, >, <=, >=.</code>
+                </div>
+                <div class="aritmetico">
+                    <h3>Operadores Aritméticos</h3>
+                    <code>+, -, *, /, %, etc.</code>
+                </div>
+                <div class="logico">
+                    <h3>Operadores lógicos</h3>
+                    <code>&&, ||, !.</code>
+                </div>
+                <div class="aumento">
+                    <h3>Incremento/Decremento</h3>
+                    <code>++/--</code>
+                </div>
+            </div>
+
+        </div>
+        <div class="condicionales">
+            <h2>Estructuras condicionales</h2>
+            <div class="contcond">
+                <div class="if">
+                    <h3>IF</h3>
+                    <p>La expresión se evalúa siempre.Si el resultado es TRUE, se ejecuta el bloque de sentencias. Si el
+                        resultado es FALSE, no se ejecuta el bloque de sentencias.
+                    </p>
+                    <img src="4/Img/If.png" alt="Condicional IF">
+                </div>
+                <div class="ifelse">
+                    <h3>If Else</h3>
+                    <p>Se evalúa la expresión_1. Si el resultado es TRUE, se ejecuta el bloque_de_sentencias_1. Si el
+                        resultado es FALSE, se ejecuta el bloque_de_sentencias_2.
+                    </p>
+                    <img src="4/Img/If_else.png" alt="Condicional IF Else">
+                </div>
+                <div class="ifelseif">
+                    <h3>If.. Elseif</h3>
+                    <p>Se evalúa la expresión_1. Si el resultado es TRUE, se ejecuta el bloque_de_sentencias_1 y
+                        finaliza;
+                        si el resultado es FALSE, se evalúa la expresión_2; si el resultado es TRUE, se ejecuta el
+                        bloque_de_sentencias_2 y finaliza. Si el resultado es FALSE, se ejecuta el
+                        bloque_de_sentencias_3.
+                    </p>
+                    <img src="4/Img/If_elseif.png" alt="Condicional IF Elseif ">
+                </div>
+                <div class="switch">
+                    <h3>Switch</h3>
+                    <p>Se evalúa la expresión. Compara el resultado con cada valor_i. Si se encuentra una coincidencia,
+                        se
+                        ejecuta el bloque_de_sentencias_i y se termina la evaluación, si no se encuentra ninguna
+                        coincidencia, se ejecuta el bloque_de_sentencias_n</p>
+                    <img src="4/Img/Switch.png" alt="Condicional Switch">
+                </div>
+            </div>
+
+        </div>
+        <div class="bucles">
+            <h2>Estructuras de bucles</h2>
+            <div class="contbucl">
+                <div class="while">
+                    <h3>While</h3>
+                    <p> La expresión se evalúa al principio de cada iteración. Si el resultado es TRUE, se ejecuta el
+                        bloque
+                        de sentencias y se vuelve a evaluar la expresión. Si el resultado es FALSE, el bucle termina.
+                    </p>
+                    <img src="4/Img/While.jpg" alt="Bucle While">
+                </div>
+                <div class="dowhile">
+                    <h3>Do While</h3>
+                    <p>Se ejecuta el bloque de sentencias al menos una vez. La expresión se evalúa al final de cada
+                        iteración. Si el resultado es TRUE, se ejecuta el bloque de sent.
+                    </p>
+                    <img src="4/Img/Dowhile.jpg" alt="Bucle Do While">
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

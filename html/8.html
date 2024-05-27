@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA | Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="8/style.css">
+</head>
+
+<body>
+    <h2>Formulario:</h2>
+    <form action="8/respuesta.php" method="post">
+        <div class="padre">
+            <div class="campos">
+                <label>Nombre: </label>
+                <input type=" text" name="nombre" maxlength="50">
+            </div>
+            <div class="campos">
+                <label>Contraseña:</label>
+                <input type="password" name="password">
+            </div>
+            <div class="campos">
+                <label for="educacion">Educación</label>
+                <select name="educacion">
+                    <option value="sin-estudios">Sin estudios</option>
+                    <option value="educacion-obligatoria" selected="selected">Educación
+                        Obligatoria</option>
+                    <option value="formacion-profesional">Formación profesional</option>
+                    <option value="universidad">Universidad</option>
+                </select>
+            </div>
+            <div class="campos">
+                <label>Lenguajes de programación de su agrado</label> <br>
+                <div class="cbx">
+                    <input type="checkbox" name="idiomas[]" value="Python" checked="checked"></input> <label
+                        for="Python">Python</label>
+                    <input type="checkbox" name="idiomas[]" value="C"> C</input>
+                    <input type="checkbox" name="idiomas[]" value="C++"> C++</input>
+                    <input type="checkbox" name="idiomas[]" value="Java"> Java</input>
+                    <input type="checkbox" name="idiomas[]" value="C#"> C#</input>
+                    <input type="checkbox" name="idiomas[]" value="JavaScript">JavaScript</input>
+                </div>
+            </div>
+
+            <div class="campos">
+                <label>Email:</label> <br>
+                <input type="text" name="email">
+            </div>
+            <div class="campos">
+                <label>Sitio Web:</label>
+                <input type="text" name="sitioweb">
+            </div>
+            <br>
+        </div>
+
+        <input type="submit" name="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

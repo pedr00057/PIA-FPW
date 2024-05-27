@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIA | Números Aleatorios</title>
+    <link rel="stylesheet" href="6/EstilosNumeros.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Números al Azar</h1>
+        
+        <div class="numbers" id="numeros-generados">
+            <h2>Números Generados:</h2>
+        </div>
+        <div class="resultado">
+            <h2>Resultado:</h2>
+            <p id="suma"></p>
+            <p id="media"></p>
+        </div>
+        <button onclick="generarNumeros()">Generar Números</button>
+    </div>
+
+    <script>
+        function generarNumeros() {
+            var numeros = [];
+            var suma = 0;
+            for (var i = 0; i < 10; i++) {
+                var numero = Math.floor(Math.random() * (50 - 10 + 1) + 10);
+                numeros.push(numero);
+                suma += numero;
+            }
+            var media = suma / numeros.length;
+            mostrarResultados(numeros, suma, media);
+        }
+
+        function mostrarResultados(numeros, suma, media) {
+            var numerosGenerados = document.getElementById("numeros-generados");
+            numerosGenerados.innerHTML = "<h2>Números Generados:</h2>";
+            numeros.forEach(function(numero) {
+                numerosGenerados.innerHTML += "<span>" + numero + "</span>";
+            });
+
+            document.getElementById("suma").innerHTML = "Suma: " + suma;
+            document.getElementById("media").innerHTML = "Media: " + media.toFixed(2);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PIA | Presentación - Funciones en PHP </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="11/style.css">
+</head>
+
+<body>
+	<h1>Introducción a las Funciones en PHP</h1>
+	<section>
+
+		<p>Las funciones son bloques de código reutilizables que realizan una tarea específica. Permiten organizar el
+			código en piezas más pequeñas y manejables, lo que facilita el mantenimiento y la reutilización del código.
+		</p>
+
+		<h2>Sintaxis Básica</h2>
+		<code>
+			function nombreFuncion($parametro1, $parametro2, ...) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;// Código a ejecutar<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;return $valorRetorno;<br>
+			}
+		</code>
+		<ul> <br>
+			
+			<li><code>function</code> es la palabra clave para definir una función.</li>
+			<li><code>nombreFuncion</code> es el nombre que le damos a la función.</li>
+			<li><code>$parametro1, $parametro2, ...</code> son los parámetros que puede recibir la función (opcionales).
+			</li>
+			<li>El cuerpo de la función contiene el código a ejecutar.</li>
+			<li><code>return</code> es opcional y se utiliza para devolver un valor desde la función.</li>
+		</ul>
+
+		<h2>Ejemplos</h2>
+		<h3>1. Función sin parámetros</h3>
+		<code>
+			function saludar() {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;echo "¡Hola, mundo!";<br>
+			}<br>
+			<br>
+			saludar(); // Salida: ¡Hola, mundo!
+		</code>
+
+		<h3>2. Función con parámetros</h3>
+		<code>
+			function sumar($a, $b) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;return $a + $b;<br>
+			}<br>
+			<br>
+			$resultado = sumar(3, 5);<br>
+			echo $resultado; // Salida: 8
+		</code>
+
+		<h3>3. Función con valores predeterminados</h3>
+		<code>
+		function dividir($a, $b = 1) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;return $a / $b;<br>
+		}<br>
+		<br>
+		echo dividir(10); // Salida: 10 (dividido por 1)<br>
+		echo dividir(20, 4); // Salida: 5
+	</code>
+
+		<h3>4. Función con número variable de argumentos</h3>
+		<code>
+		function sumar(...$numeros) {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;$suma = 0;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;foreach ($numeros as $numero) {<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$suma += $numero;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;return $suma;<br>
+			}<br>
+			<br>
+			echo sumar(1, 2, 3, 4, 5); // Salida: 15
+		</code>
+	</section>
+</body>
+
+</html>
