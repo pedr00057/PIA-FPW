@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+
+:root {
+  --primary-clr: rgba(228, 228, 229, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: slidein 120s forwards infinite alternate;
+}
+
+@keyframes slidein {
+
+  0%,
+  100% {
+    background-position: 20% 0%;
+    background-size: 3400px;
+  }
+
+  50% {
+    background-position: 100% 0%;
+    background-size: 2400px;
+  }
+}
+h2{
+    color: #fff;
+}
+form{
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+.padre{
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.campos{
+    padding: 0 20px 0 20px;
+    height: 100px;
+    width: 250px;
+}
+.cbx{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 220px;
+}
+.cbx input{
+    height: 20px;
+    margin: 0 5px 0 5px;
+}
+input{
+    width: auto;
+    height: 25px;
+}
+select{
+    height: 25px;
+}
+input[type="submit"]{
+    background-color: #9665aa;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+    font-weight: bold;
+    color: #fff;
+}
+.pehp{
+    background-color: #fff;
+    color: #9665aa;
+    width: 500px;
+    border-radius: 12px;
+    padding: 20px;
+}
+.pehp p{
+    font-weight: bold;
+}
+.pehp h2{
+    color: #9665aa;
+}
