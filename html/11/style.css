@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+section{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 12px;
+}
+code{
+    background-color: antiquewhite;
+    font-family: "Inconsolata", monospace;
+}
+h1{
+    color: white;
+}
